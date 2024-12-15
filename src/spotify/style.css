@@ -1,0 +1,131 @@
+/* Basic styling */
+.root {
+    -fx-font-family: Arial, sans-serif;
+    -fx-background-color: #121212;
+    -fx-text-fill: white;
+    -fx-padding: 20px;
+    -fx-alignment: center;
+}
+
+/* Playlist container */
+.playlist {
+    -fx-background-color: #333333;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-pref-width: 80%;
+    -fx-margin-bottom: 20px;
+}
+
+/* ListView container */
+.list-view {
+    -fx-background-color: #1c1c1c; /* Slightly lighter than the Spotify dark theme */
+    -fx-control-inner-background: #1c1c1c; /* Background of list items */
+    -fx-border-color: #333333; /* Subtle border to define edges */
+    -fx-border-width: 2px; /* Border thickness */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-text-fill: white; /* Text color */
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+}
+
+/* ListView selected item styling */
+.list-cell:filled:selected, .list-cell:filled:selected:focused {
+    -fx-background-color: #1db954; /* Spotify green for selected items */
+    -fx-text-fill: black; /* Contrasting text color */
+    -fx-border-color: #1aa34a; /* Subtle border around selected item */
+    -fx-border-width: 2px;
+}
+
+/* ListView hover effect */
+.list-cell:hover {
+    -fx-background-color: #292929; /* Slightly darker hover effect */
+}
+
+/* Song item */
+.song {
+    -fx-padding: 10px;
+    -fx-border-color: #444444;
+    -fx-border-width: 0 0 2px 0; /* Bottom border only */
+}
+
+/* Song image */
+.song img {
+    -fx-fit-width: 50px;
+    -fx-fit-height: 50px;
+    -fx-border-radius: 5px;
+    -fx-margin-right: 15px;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #1db954; /* Spotify green */
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-border-radius: 20px; /* Rounded button for modern look */
+    -fx-padding: 10px 20px; /* Spacious padding for larger buttons */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #1aa34a; /* Slightly darker green for hover */
+}
+
+.button:pressed {
+    -fx-background-color: #158a39; /* Even darker green when pressed */
+}
+
+/* Controls container */
+.controls {
+    -fx-alignment: center;
+    -fx-spacing: 15px; /* Space between buttons */
+    -fx-margin-top: 20px;
+}
+
+.controls button {
+    -fx-font-size: 18px;
+    -fx-padding: 10px 15px;
+}
+
+/* Volume slider */
+.volume-slider {
+    -fx-pref-width: 150px; /* Wider slider */
+    -fx-background-color: #1db954; /* Spotify green for slider */
+    -fx-border-radius: 5px; /* Rounded slider */
+    -fx-padding: 5px;
+}
+
+/* Progress bar */
+.progress-bar {
+    -fx-pref-width: 80%;
+    -fx-background-color: #292929;
+    -fx-border-color: #444444;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-margin: 10px 0;
+}
+
+/* Album cover */
+.album-cover {
+    -fx-fit-width: 200px;
+    -fx-fit-height: 200px;
+    -fx-border-radius: 10px;
+    -fx-margin-top: 20px;
+    -fx-border-color: #333333;
+    -fx-border-width: 3px;
+}
+
+/* Add-on elements */
+.label {
+    -fx-text-fill: #b3b3b3; /* Spotify's light gray for text */
+    -fx-font-size: 14px;
+}
+
+/* Input fields */
+.text-input {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+    -fx-border-color: #444444;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
